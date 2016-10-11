@@ -1,6 +1,7 @@
 # Torino
 
 TODO: Write description.
+TODO: Add logo-image.
 
 ## Installation
 
