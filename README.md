@@ -5,7 +5,7 @@ TODO: Add logo-image.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+1. Add this line to your application's Gemfile:
 
 ```ruby
 gem 'torino'
@@ -18,6 +18,12 @@ And then execute:
 Or install it yourself as:
 
     $ gem install torino
+
+2. Add this line to your application.css:
+
+```css
+*= require torino
+```
 
 ## Usage
 
