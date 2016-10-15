@@ -2,7 +2,7 @@
 
 ![Ford Torino](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/1971_Ford_Torino_GT_%2812259626886%29.jpg/1200px-1971_Ford_Torino_GT_%2812259626886%29.jpg)
 
-TODO: Write description.
+Nothing special, just my stylesheets library without any dependencies.
 
 ## Installation
 

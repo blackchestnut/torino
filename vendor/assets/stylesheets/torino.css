@@ -1,4 +1,4 @@
-html, body {
+html {
   height: 100%;
 }
 
@@ -7,4 +7,215 @@ body {
   margin: 0 auto;
   text-rendering: optimizeLegibility;
   width: 100%;
+  padding-bottom: 40px;
+}
+
+.container {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*
+ * Text
+ * ------------------------------------------
+ */
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+/*
+ * Directions
+ * ------------------------------------------
+ */
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+/*
+ * Buttons
+ * ------------------------------------------
+ */
+input[type=submit] {
+  -webkit-appearance: none;
+  width: auto;
+  border: none;
+  font-size: inherit;
+}
+
+.button, input[type=submit] {
+  background-color: #00695C;
+  color: #FFF;
+  padding: 16px 28px;
+  cursor: pointer;
+}
+
+.button:hover, input[type=submit]:hover {
+  background-color: #00796B;
+}
+
+
+a.button, a.button:hover, a.button:visited {
+  color: #FFF;
+}
+
+.button.mini {
+  color: #212121;
+  background-color: #FFD740;
+  padding: 4px 8px;
+}
+
+.button.mini:hover {
+  color: #212121;
+  background-color: #FFE57F;
+}
+
+a.button.mini, a.button.mini:hover, a.button.mini:visited {
+  color: #212121;
+}
+
+/*
+ * Forms
+ * ------------------------------------------
+ */
+.actions {
+  margin-top: 20px;
+}
+
+.actions a, .actions input[type=submit], .actions .button {
+  margin-right: 40px;
+}
+
+/*
+ * Inputs
+ * ------------------------------------------
+ */
+input {
+  margin: 0 10px 14px 0;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: #FFE57F solid 1px;
+  font-size: inherit;
+  width: 400px;
+}
+
+input[type=text]:focus {
+  border-bottom: #009688 solid 1px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+/*
+ * Labels
+ * ------------------------------------------
+ */
+label {
+  color: #757575;
+  margin-right: 18px;
+}
+
+label.fix-width {
+  display: inline-block;
+  width: 160px;
+  max-width: 160px;
+  min-width: 160px;
+}
+
+/*
+ * Links
+ * ------------------------------------------
+ */
+a {
+  border: none;
+  color: #1565C0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1565C0;
+  border: none;
+}
+
+a:visited {
+  color: #1565C0;
+}
+
+/*
+ * Linsts
+ * ------------------------------------------
+ */
+
+/*
+ * Menu
+ * ------------------------------------------
+ */
+.menu {
+  background-color: #009688;
+  color: #FFF;
+  overflow: auto;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.menu a {
+  color: #FFF;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.menu li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.menu li:last-child {
+  padding-right: 0;
+}
+
+/*
+ * Tables
+ * ------------------------------------------
+ */
+table {
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+table.wide {
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 30px 10px 14px;
+}
+
+th:last-child, td:last-child {
+  padding-right: 14px;
+}
+
+th {
+  background-color: #CFD8DC;
 }
