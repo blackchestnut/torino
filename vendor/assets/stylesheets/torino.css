@@ -90,6 +90,10 @@ a.button.mini, a.button.mini:hover, a.button.mini:visited {
  * Forms
  * ------------------------------------------
  */
+.field_with_errors {
+  display: inline-block;
+}
+
 .actions {
   margin-top: 20px;
 }
@@ -106,14 +110,14 @@ input {
   margin: 0 10px 14px 0;
 }
 
-input[type=text] {
+input[type=text], input[type=password] {
   border: none;
   border-bottom: #FFE57F solid 1px;
   font-size: inherit;
   width: 400px;
 }
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=password]:focus {
   border-bottom: #009688 solid 1px;
 }
 
@@ -125,16 +129,22 @@ input:focus, textarea:focus {
  * Labels
  * ------------------------------------------
  */
-label {
-  color: #757575;
-  margin-right: 18px;
+form.label-width-100 label {
+  width: 100px;
+  max-width: 100px;
+  min-width: 100px;
 }
 
-label.fix-width {
+form.label-width-200 label {
+  width: 200px;
+  max-width: 200px;
+  min-width: 200px;
+}
+
+label {
+  color: #757575;
   display: inline-block;
-  width: 160px;
-  max-width: 160px;
-  min-width: 160px;
+  margin-right: 18px;
 }
 
 /*
@@ -207,9 +217,18 @@ table.wide {
   width: 100%;
 }
 
+table.rows tr {
+  border-bottom: 1px solid #CFD8DC;
+}
+
+table.rows tr:last-child {
+  border: none
+}
+
 th, td {
   text-align: left;
   padding: 10px 30px 10px 14px;
+  vertical-align: top;
 }
 
 th:last-child, td:last-child {
@@ -218,4 +237,22 @@ th:last-child, td:last-child {
 
 th {
   background-color: #CFD8DC;
+}
+
+
+/*
+ * Misc
+ * ------------------------------------------
+ */
+pre {
+  background-color: #E0F2F1;
+  padding: 6px;
+}
+
+hr {
+  border: 1px solid #FFE57F;
+}
+
+hr.strong {
+  border: 2px solid #FFE57F;
 }
