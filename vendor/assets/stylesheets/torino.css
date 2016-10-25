@@ -58,6 +58,7 @@ input[type=submit] {
 .button, input[type=submit] {
   background-color: #00695C;
   color: #FFF;
+  display: inline-block
   padding: 16px 28px;
   cursor: pointer;
 }
