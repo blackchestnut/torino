@@ -91,6 +91,28 @@ a.button.mini, a.button.mini:hover, a.button.mini:visited {
  * Forms
  * ------------------------------------------
  */
+form, .form {
+  margin-bottom: 40px;
+}
+
+form label, .form label {
+  width: 160px;
+  max-width: 160px;
+  min-width: 160px;
+}
+
+form.label-width-100 label, .form.label-width-100 label {
+  width: 100px;
+  max-width: 100px;
+  min-width: 100px;
+}
+
+form.label-width-200 label, .form.label-width-200 label {
+  width: 200px;
+  max-width: 200px;
+  min-width: 200px;
+}
+
 .field_with_errors {
   display: inline-block;
 }
@@ -130,18 +152,6 @@ input:focus, textarea:focus {
  * Labels
  * ------------------------------------------
  */
-form.label-width-100 label, .form.label-width-100 label {
-  width: 100px;
-  max-width: 100px;
-  min-width: 100px;
-}
-
-form.label-width-200 label, .form.label-width-200 label {
-  width: 200px;
-  max-width: 200px;
-  min-width: 200px;
-}
-
 label {
   color: #757575;
   display: inline-block;
