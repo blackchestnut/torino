@@ -130,13 +130,13 @@ input:focus, textarea:focus {
  * Labels
  * ------------------------------------------
  */
-form.label-width-100 label {
+form.label-width-100 label, .form.label-width-100 label {
   width: 100px;
   max-width: 100px;
   min-width: 100px;
 }
 
-form.label-width-200 label {
+form.label-width-200 label, .form.label-width-200 label {
   width: 200px;
   max-width: 200px;
   min-width: 200px;
