@@ -28,6 +28,28 @@ Add this line to your application.css:
 *= require torino
 ```
 
+### Examples
+
+Menu
+
+```slim
+- return unless signed_in?
+
+.menu
+  .container
+    ul
+      li : a href=dashboard_url Dashboard
+      li : a href=user_url(current_user) Profile
+    ul.pull-right
+      li = current_user.twin.name
+      li
+        a [
+          href=sessions_url
+          data-method='DELETE'
+          data-no-turbolink='true'
+        ] Exit
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies.
