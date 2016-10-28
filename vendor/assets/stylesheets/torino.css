@@ -55,7 +55,8 @@ input[type=submit] {
   font-size: inherit;
 }
 
-.button, input[type=submit] {
+.button,
+input[type=submit] {
   background-color: #00695C;
   color: #FFF;
   display: inline-block;
@@ -63,12 +64,15 @@ input[type=submit] {
   cursor: pointer;
 }
 
-.button:hover, input[type=submit]:hover {
+.button:hover,
+input[type=submit]:hover {
   background-color: #00796B;
 }
 
 
-a.button, a.button:hover, a.button:visited {
+a.button,
+a.button:hover,
+a.button:visited {
   color: #FFF;
 }
 
@@ -83,7 +87,9 @@ a.button, a.button:hover, a.button:visited {
   background-color: #FFE57F;
 }
 
-a.button.mini, a.button.mini:hover, a.button.mini:visited {
+a.button.mini,
+a.button.mini:hover,
+a.button.mini:visited {
   color: #212121;
 }
 
@@ -91,37 +97,39 @@ a.button.mini, a.button.mini:hover, a.button.mini:visited {
  * Forms
  * ------------------------------------------
  */
-form, .form {
+form,
+.form {
   margin-bottom: 40px;
 }
 
-form label, .form label {
+form label,
+.form label {
   width: 160px;
   max-width: 160px;
   min-width: 160px;
 }
 
-form.label-width-100 label, .form.label-width-100 label {
+form.label-width-100 label,
+.form.label-width-100 label {
   width: 100px;
   max-width: 100px;
   min-width: 100px;
 }
 
-form.label-width-200 label, .form.label-width-200 label {
+form.label-width-200 label,
+.form.label-width-200 label {
   width: 200px;
   max-width: 200px;
   min-width: 200px;
-}
-
-.field_with_errors {
-  display: inline-block;
 }
 
 .actions {
   margin-top: 20px;
 }
 
-.actions a, .actions input[type=submit], .actions .button {
+.actions a,
+.actions input[type=submit],
+.actions .button {
   margin-right: 40px;
 }
 
@@ -129,23 +137,44 @@ form.label-width-200 label, .form.label-width-200 label {
  * Inputs
  * ------------------------------------------
  */
-input {
+input,
+select {
   margin: 0 10px 14px 0;
 }
 
-input[type=text], input[type=password] {
+input[type=text],
+input[type=password],
+textarea {
   border: none;
   border-bottom: #FFE57F solid 1px;
   font-size: inherit;
   width: 400px;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus,
+input[type=password]:focus {
   border-bottom: #009688 solid 1px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
+}
+
+.field_with_errors {
+  display: inline-block;
+}
+
+.field_with_errors > input[type=text],
+.field_with_errors > input[type=password],
+.field_with_errors > textarea {
+  background-color: #FFEBEE;
+  border-bottom: #E53935 solid 1px;
+}
+
+.field_with_errors > .error_message {
+  color: #D32F2F;
+  display: inline-block;
 }
 
 /*
@@ -236,13 +265,15 @@ table.rows tr:last-child {
   border: none
 }
 
-th, td {
+th,
+td {
   text-align: left;
   padding: 10px 30px 10px 14px;
   vertical-align: top;
 }
 
-th:last-child, td:last-child {
+th:last-child,
+td:last-child {
   padding-right: 14px;
 }
 
