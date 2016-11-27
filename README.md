@@ -33,15 +33,13 @@ Add this line to your application.css:
 Menu
 
 ```slim
-- return unless signed_in?
-
 .menu
   .container
     ul
-      li : a href=dashboard_url Dashboard
-      li : a href=user_url(current_user) Profile
+      li : a href='#page1' Page 1
+      li : a href='#page2' Page 2
     ul.pull-right
-      li = current_user.twin.name
+      li = current_user.email
       li
         a [
           href=sessions_url
