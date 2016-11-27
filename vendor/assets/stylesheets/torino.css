@@ -223,6 +223,10 @@ a:visited {
  * Linsts
  * ------------------------------------------
  */
+ul.none, ol.none {
+  list-style: none;
+  padding: 0;
+}
 
 /*
  * Menu
@@ -293,6 +297,48 @@ th {
   background-color: #CFD8DC;
 }
 
+/*
+ * Notice
+ * ------------------------------------------
+ */
+.notice {
+  position: absolute;
+  top: 10px;
+  right: -1000px;
+  padding: 20px 30px;
+  background-color: #FFE57F;
+  cursor: pointer;
+  transition: right 1s linear;
+}
+.notice.active {
+  right: 10px;
+}
+
+/*
+ * Pagination (based on gem 'will_paginate')
+ * ------------------------------------------
+ */
+.pagination {
+  margin: 10px 0;
+}
+.pagination .disabled {
+  color: #757575;
+}
+.pagination .previous_page,
+.pagination .next_page {
+  padding: 8px 12px;
+}
+.pagination a,
+.pagination .current {
+  padding: 8px 12px;
+}
+.pagination .current {
+  background-color: #CFD8DC;
+  font-style: normal;
+}
+.pagination a:hover {
+  background-color: #E0F2F1;
+}
 
 /*
  * Misc
@@ -309,4 +355,8 @@ hr {
 
 hr.strong {
   border: 2px solid #FFE57F;
+}
+
+.hidden {
+  display: none
 }
