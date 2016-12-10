@@ -346,6 +346,7 @@ th {
  */
 pre {
   background-color: #E0F2F1;
+  overflow-x: scroll;
   padding: 6px;
 }
 
