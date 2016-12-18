@@ -138,7 +138,6 @@ form.label-width-200 label,
  * ------------------------------------------
  */
 textarea,
-input,
 input[type=text],
 input[type=button],
 input[type=submit] {
@@ -187,6 +186,10 @@ textarea:focus {
 .field_with_errors > .error_message {
   color: #D32F2F;
   display: inline-block;
+}
+
+td input {
+  width: 100% !important;
 }
 
 /*
