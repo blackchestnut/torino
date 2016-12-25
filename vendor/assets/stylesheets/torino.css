@@ -16,6 +16,21 @@ body {
   margin-left: auto;
 }
 
+h1 {
+  margin: 20px 0;
+  font-size: 32px;
+}
+
+h2 {
+  margin: 18px 0;
+  font-size: 24;
+}
+
+h3 {
+  margin: 18px 0 10px;
+  font-size: 18px;
+}
+
 /*
  * Text
  * ------------------------------------------
@@ -363,4 +378,12 @@ hr.strong {
 
 .hidden {
   display: none
+}
+
+.note {
+  padding: 4px 0 4px 10px;
+  border-left: 8px;
+  border-left-style: solid;
+  border-color: #CFD8DC;
+  color: #757575;
 }
